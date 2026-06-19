@@ -1,9 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap');
+
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
 }
 
 #app{
@@ -13,6 +17,9 @@ html, body {
 
     height: 100%;
     width: 100%;
+
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .book-entry{
@@ -20,8 +27,8 @@ html, body {
     margin-left: auto;
     margin-right: auto;
 
-    height: 100%;
     width: 100%;
+    height: 100%;
 
     display: flex;
     justify-content: center;
@@ -39,16 +46,45 @@ html, body {
 .book-display{
     grid-column: 2;
     height: 100%;
-    width: 100%;
-    background-color: rgb(49, 28, 15);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-}
-.divider{
-    width: 100%;
-    height: 30px;
+    width: 650px;
     background-color: rgb(80, 46, 26);
+    font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap:10px;
+
+    border: 10px solid rgb(80, 46, 26);
+    box-sizing: border-box;
 }
+#divider-1{
+    background-color:  rgb(49, 28, 15);
+    grid-row:1;
+}
+#divider-2{
+    background-color:  rgb(49, 28, 15);
+    grid-row:2;
+}
+#divider-3{
+    background-color:  rgb(49, 28, 15);
+    grid-row:3;
+}
+#divider-4{
+    background-color:  rgb(49, 28, 15);
+    grid-row:4;
+}
+#divider-5{
+    background-color:  rgb(49, 28, 15);
+    grid-row:5;
+}
+/* reference all dividers: set flex row with space between */
+[id^="divider-"]{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 30px;
+
+    color:white;
+}
+
