@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="book-entry">
+            <form>
+                <div>
+                    <label for="bookName">Book Name</label>
+                    <input type="text" id="bookName" name="bookName" placeholder="Enter book name" required>
+                </div>
+                <div>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" placeholder="Enter author" required>
+                </div>
+                <div>
+                    <label for="datePublished">Date Published</label>
+                    <input type="date" id="datePublished" name="datePublished" required>
+                </div>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+        <div class="book-display">
+            <div class="divider"></div>
+            <div class="divider"></div>
+            <div class="divider"></div>
+            <div class="divider"></div>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

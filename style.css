@@ -1,0 +1,54 @@
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#app{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    height: 100%;
+    width: 100%;
+}
+
+.book-entry{
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+
+    background-color: rgb(87, 87, 87);
+    color:white;
+}
+
+.book-entry form div{
+    margin-top: 40px;
+}
+
+.book-display{
+    grid-column: 2;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(49, 28, 15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.divider{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(80, 46, 26);
+}
