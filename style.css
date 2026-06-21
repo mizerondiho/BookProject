@@ -31,8 +31,9 @@ html, body {
     height: 100%;
 
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     gap: 20px;
 
     background-color: rgb(87, 87, 87);
@@ -43,6 +44,14 @@ html, body {
     margin-top: 40px;
 }
 
+
+
+.message-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .book-display{
     grid-column: 2;
     height: 100%;
@@ -51,7 +60,9 @@ html, body {
     font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
 
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: start;
+    align-content: start;
     gap:10px;
 
     border: 10px solid rgb(80, 46, 26);
